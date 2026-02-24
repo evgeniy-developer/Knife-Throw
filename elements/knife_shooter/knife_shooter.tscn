@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://de3i30kfdrbf8"]
+
+[ext_resource type="Script" uid="uid://bfis8qcd7nwep" path="res://elements/knife_shooter/knife_shooter.gd" id="1_bvars"]
+[ext_resource type="PackedScene" uid="uid://ce1b7r5sxptxi" path="res://elements/knife/knife.tscn" id="2_g1uoy"]
+
+[node name="KnifeShooter" type="Node2D"]
+script = ExtResource("1_bvars")
+
+[node name="Knife" parent="." instance=ExtResource("2_g1uoy")]
+
+[node name="Timer" type="Timer" parent="Knife"]
+wait_time = 0.1
+one_shot = true
